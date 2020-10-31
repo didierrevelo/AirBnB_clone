@@ -34,3 +34,15 @@ class BaseModel():
         dic = self.__dict__
         return "[{}] ({}) {}".format(name, self.id, dic)
 
+	def save(self):
+        """ save
+        """
+        self.updated_at = datetime.now()
+
+        def to_dict(self):
+    	name = self.__class__.__name__
+    	dictionary["__class__"] = name
+    	dictionary["updated_at"] = dictionary["updated_at"].isoformat()
+    	dictionary["created_at"] = dictionary["created_at"].isoformat()
+    	
+    	return dictionary
