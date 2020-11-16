@@ -1,53 +1,52 @@
-section.filters {
-    color: #ffffff;
+.filters{
+    background-color: white;
     height: 70px;
     width: 100%;
-    border: 1px solid #dddddd;
+    border: solid 1px #DDDDDD;
     border-radius: 4px;
+    text-align: right;
 }
-section.filters button {
-    float: right;
+
+button{
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 30px;
     font-size: 18px;
-    background-color: #ff5a5f;
-    color: #ffffff;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
     height: 48px;
-    border: none;
     width: 20%;
+    border: none;
     border-radius: 4px;
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    text-align: center;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 button:hover{
     opacity: 0.9;
 }
-.locations {
-    position: absolute;
-    margin: 0 0 0 30px;
+.locations{
+    text-align: left;
     height: 100%;
     width: 25%;
-    border-right: 1px solid #dddddd;
+    border-right: solid 1px #DDDDDD;
+    float: left;
 }
-.locations h3,
-.amenities h3 {
+.amenities{
+    text-align: left;
+    align-content: flex-start;
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+.amenities h3, .locations h3{
     font-weight: 600;
-    margin-bottom: 0;
-    color: #080808;
+    margin: 0px;
+    margin-top: 17px;
+    padding: 0px;
+    padding-left: 30px;
 }
-.locations h4,
-.amenities h4 {
-    font-size: 14px;
+.amenities h4, .locations h4{
+    margin: 0px;
+    padding: 0px;
     font-weight: 400;
-    margin: 0;
-    color: #080808;
-}
-.amenities {
-    position: absolute;
-    left: 25%;
-    margin: 0 0 0 60px;
-    height: 100%;
-    width: 25%;
+    font-size: 14px;
+    padding-left: 30px;
 }
